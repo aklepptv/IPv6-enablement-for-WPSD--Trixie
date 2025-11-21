@@ -92,7 +92,7 @@ Example output:
 {
   "wlan0": {
     "state": "UP",
-    "global": "2600:4041:20a6:67aa::25/64",
+    "global": "2001:DB8:::::25/64",
     "ula": "none",
     "link_local": "fe80::ad0e:6c9:2fed:cf8d/64",
     "default_route": "default via fe80::1 dev wlan0 metric 1024"
@@ -121,10 +121,10 @@ Instead of hard-coding the **entire** IPv6 address, we only fix the **host part*
 ip token set ::25 dev wlan0
 ```
 
-When your router advertises a prefix (e.g. `2600:4041:20a6:67aa::/64`), the kernel builds:
+When your router advertises a prefix (e.g. `2001:DB8:::::/64`), the kernel builds:
 
 ```text
-2600:4041:20a6:67aa::25/64
+2001:DB8:::::25/64
 ```
 
 If your ISP renumbers your prefix, your host automatically renumbers to:
