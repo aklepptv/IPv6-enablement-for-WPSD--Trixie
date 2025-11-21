@@ -14,7 +14,7 @@ It’s designed for lightweight devices (e.g. Raspberry Pi / WPSD-style images),
 - ✅ Enables IPv6 in `sysctl` across the system
 - ✅ Accepts IPv6 RAs on `wlan0`
 - ✅ Sets a **dynamic-prefix / static-host** IPv6 address, e.g.:
-  - `2600:4041:20a6:67aa::25/64`
+  - `2001:DB8:::25/64`
 - ✅ Optional: disables temporary/privacy addresses on `wlan0`
 - ✅ Provides `ipv6-status.sh` to quickly see interface and route state
 
