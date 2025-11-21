@@ -94,7 +94,7 @@ Example output:
     "state": "UP",
     "global": "2001:DB8:::::25/64",
     "ula": "none",
-    "link_local": "fe80::ad0e:6c9:2fed:cf8d/64",
+    "link_local": "fe80:80::/64",
     "default_route": "default via fe80::1 dev wlan0 metric 1024"
   }
 }
