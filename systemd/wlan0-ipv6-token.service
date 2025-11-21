@@ -1,0 +1,12 @@
+[Unit]
+Description=Set IPv6 token for wlan0 (dynamic prefix, static host)
+After=network-pre.target
+Before=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/wlan0-ipv6-token.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
