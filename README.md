@@ -232,6 +232,24 @@ Make sure:
 
 Expected: `0`.
 
+
+## Optional: Enable IPv6 for nginx frontend
+
+If you are serving the UI (e.g. WPSD / modern Wi-Fi dashboard) via **nginx** on Debian Trixie, you can enable an IPv6 listener that proxies to your existing IPv4 site.
+
+This repository includes an example site config:
+
+- `nginx/wpsd-ipv6-proxy.conf`
+
+It creates an **IPv6-only listener** on port 80 that proxies to `http://127.0.0.1:80`, so you don’t have to change your existing IPv4 nginx / app configuration.
+
+### Install the IPv6 nginx site
+
+1. Copy the example config into nginx’s `sites-available`:
+
+   ```bash
+   sudo cp nginx/wpsd-ipv6-proxy.conf /etc/nginx/sites-available/wpsd-ipv6-proxy.conf
+
 ---
 
 ## License
